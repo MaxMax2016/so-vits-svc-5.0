@@ -147,8 +147,8 @@ data_svc/
 
 ## 训练
 0. 参数调整  
-  如果基于预训练模型微调，需要下载预训练模型[sovits5.0_bigvgan_555.pth](https://github.com/PlayVoice/so-vits-svc-5.0/releases/tag/bigvgan_release)并且放在项目根目录下面  
-  并且修改`configs/base.yaml`的参数`pretrain: "./sovits5.0_bigvgan_555.pth"`，并适当调小学习率（建议从5e-5开始尝试）  
+  如果基于预训练模型微调，需要下载预训练模型[sovits5.0_bigvgan_large_v2.pth](https://github.com/PlayVoice/so-vits-svc-5.0/releases/tag/bigvgan_release)并且放在项目根目录下面  
+  并且修改`configs/base.yaml`的参数`pretrain: "./sovits5.0_bigvgan_large_v2.pth"`，并适当调小学习率（建议从5e-5开始尝试）  
   `batch_size`：6G显存推荐设置为6，设置为8可以训练，但是一个step的速度会非常慢  
 
 1. 开始训练  
